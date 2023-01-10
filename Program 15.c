@@ -28,7 +28,7 @@
 		int j;
 		printf("nnnn");	
 		printf("+------------------------+");
-		printf("\n Directorytfiles    | n");
+		printf("\n Directorytfiles    | \n");
 		printf("+------------------------+");
 		for(j=0;j<n;j++){
 			printf("n %s",dir[j].dirName);
@@ -62,7 +62,7 @@
 	void SearchFile(int z){
 		char name[20];
 		int found=-1;
-		printf("n Enter the file to be searched :");
+		printf("\n Enter the file to be searched :");
 		scanf("%s",name);
 		for(i=0;i<dir[z].fno;i++){
 			if(strcmp(dir[z].fileName[i],name)==0){
@@ -72,7 +72,7 @@
 			}
 		}
 		if(found==-1)
-			printf("n The file is not found ");		
+			printf("\n The file is not found ");		
 	}
 	
 	
